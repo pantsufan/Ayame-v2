@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
-export default function Home({ upcoming }) {
+export default function Season({ upcoming }) {
   return (
     <div>
       <Head>
@@ -13,11 +13,12 @@ export default function Home({ upcoming }) {
           Ayame V2
         </h1>
         <h1 className="font-black text-3xl text-center text-blue-500 p-5">
-          Top Upcoming
+          In Upcoming Season
         </h1>
         <Nav />
+
         <div className="md:grid grid-cols-2 gap-2">
-          {upcoming.top.map((value, key) => {
+          {upcoming.anime.map((value, key) => {
             return (
               <figure
                 className="md:flex bg-blue-200 rounded-xl p-4 my-4 mx-5"
@@ -53,7 +54,7 @@ export default function Home({ upcoming }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://api.jikan.moe/v3/top/anime/1/upcoming`);
+  const res = await fetch(`https://api.jikan.moe/v3/season/later`);
   const upcoming = await res.json();
 
   return {

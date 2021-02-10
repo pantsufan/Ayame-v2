@@ -1,6 +1,23 @@
 import Head from "next/head";
 import Nav from "../components/Nav";
-export default function Home({ upcoming }) {
+import { useState, useEffect } from "react";
+import Axios from "axios";
+export default function Search({ upcoming }) {
+  const [searchAnime, setSearchAnime] = useState("");
+  const url = "https://api.jikan.moe/v3/search/anime?q=";
+
+  const [anime, setAnime] = useState([]);
+
+  const getAnime = async () => {
+    let res = await Axios.get(url + searchAnime).then((response) => {
+      setAnime(response.data.results);
+    });
+  };
+
+  const updateAnime = (event) => {
+    setSearchAnime(event.target.value);
+  };
+
   return (
     <div>
       <Head>
@@ -13,11 +30,25 @@ export default function Home({ upcoming }) {
           Ayame V2
         </h1>
         <h1 className="font-black text-3xl text-center text-blue-500 p-5">
-          Top Upcoming
+          Search
         </h1>
         <Nav />
+        <div className="flex justify-center p-6">
+          <input
+            className="p-2 w-full rounded-md"
+            type="text"
+            placeholder="Find Anime"
+            onChange={updateAnime}
+          ></input>
+          <button
+            className="bg-blue-600 hover:bg-blue-700 p-3 text-center rounded-xl text-blue-50 ml-4"
+            onClick={getAnime}
+          >
+            Search
+          </button>
+        </div>
         <div className="md:grid grid-cols-2 gap-2">
-          {upcoming.top.map((value, key) => {
+          {anime.map((value, key) => {
             return (
               <figure
                 className="md:flex bg-blue-200 rounded-xl p-4 my-4 mx-5"
@@ -51,14 +82,3 @@ export default function Home({ upcoming }) {
     </div>
   );
 }
-
-export const getStaticProps = async () => {
-  const res = await fetch(`https://api.jikan.moe/v3/top/anime/1/upcoming`);
-  const upcoming = await res.json();
-
-  return {
-    props: {
-      upcoming,
-    },
-  };
-};
