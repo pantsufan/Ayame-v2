@@ -88,5 +88,5 @@ Distributed under the MIT License.
 
 ## Author
 
-* **Joel Rodrigues** - [Joel Rodrigues](https://github.com/pantsufan/) - *Built Ayame*
+* **Joel Rodrigues** - [pantsufan](https://github.com/pantsufan/) - *Built Ayame*
 
