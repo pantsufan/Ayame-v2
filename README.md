@@ -1,34 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br/>
+<p align="center">
+  <a href="https://github.com/pantsufan/Ayame-v2">
+    <img src="https://raw.githubusercontent.com/pantsufan/pantsufan.github.io/main/apple-touch-icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h2 align="center">Ayame</h2>
+
+  <p align="center">
+    An Anime Listing Web App!
+    <br/>
+    <br/>
+    <a href="https://ayamev2.vercel.app">View Demo</a>
+    .
+    <a href="https://github.com/pantsufan/Ayame-v2/issues">Report Bug</a>
+    .
+    <a href="https://github.com/pantsufan/Ayame-v2/issues">Request Feature</a>
+  </p>
+</p>
+
+![Contributors](https://img.shields.io/github/contributors/pantsufan/Ayame-v2?color=dark-green) ![Issues](https://img.shields.io/github/issues/pantsufan/Ayame-v2) ![License](https://img.shields.io/github/license/pantsufan/Ayame-v2) 
+
+## Table Of Contents
+
+- [Table Of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+- [Features:](#features)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contributing](#contributing)
+  - [Creating A Pull Request](#creating-a-pull-request)
+- [License](#license)
+- [Author](#author)
+
+## About The Project
+
+![Screen Shot](https://i.ibb.co/Sx6Bxv6/ayame.png)
+
+When I first created Ayame back in 2020. It was my second project made using React. Since then, I have always wanted to recreate it from the ground up with a new look and features.
+
+## Features:
+- Built-in search functionality 
+- Popular anime right on the homepage
+- Don't miss out on upcoming anime for the next season
+
+## Built With
+
+- Next.js
+- Tailwind CSS
+- Jikan REST API
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- npm
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repo
+```git clone https://github.com/pantsufan/Ayame-v2.git```
+2. Install NPM packages
+```npm install```
+3. Run the development server:
+```npm run dev```
+Open http://localhost:3000 with your browser to see the result.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Creating A Pull Request
 
-## Deploy on Vercel
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. 
+
+## Author
+
+* **Joel Rodrigues** - [Joel Rodrigues](https://github.com/pantsufan/) - *Built Ayame*
+
