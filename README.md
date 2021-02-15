@@ -13,8 +13,6 @@
     <a href="https://ayamev2.vercel.app">View Demo</a>
     .
     <a href="https://github.com/pantsufan/Ayame-v2/issues">Report Bug</a>
-    .
-    <a href="https://github.com/pantsufan/Ayame-v2/issues">Request Feature</a>
   </p>
 </p>
 
