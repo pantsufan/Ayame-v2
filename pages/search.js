@@ -28,7 +28,7 @@ export default function Search({ upcoming }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-blue-100">
+      <main className="bg-blue-100 min-h-screen">
         <h1 className="font-black text-6xl text-center text-blue-600 pt-5">
           Ayame V2
         </h1>
