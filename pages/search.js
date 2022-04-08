@@ -52,7 +52,7 @@ export default function Search({ upcoming }) {
         </div>
         {loading ? (
           <h3 className="font-black text-2xl text-center text-blue-400 p-6">
-            Start Looking For Your Favouirte Anime
+            Start Looking For Your Favourite Anime
           </h3>
         ) : (
           <div className="md:grid grid-cols-2 gap-2">
